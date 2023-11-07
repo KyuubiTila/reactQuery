@@ -8,7 +8,12 @@ const fetchSuperHeroes = () => {
 export const RQSuperHeroesPage = () => {
   const { isLoading, data, isError, error } = useQuery(
     'super-heroes',
-    fetchSuperHeroes
+    fetchSuperHeroes,
+    // after 5 seconds the caache for react-Query [super-heroes] is garbaged i.e no memory storage for it again
+    // the default if not set is 5 minutes
+    {
+      cacheTime: 5000,
+    }
   );
 
   if (isLoading) {
