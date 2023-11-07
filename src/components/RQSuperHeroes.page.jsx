@@ -13,6 +13,8 @@ export const RQSuperHeroesPage = () => {
     // the default if not set is 5 minutes
     {
       cacheTime: 5000,
+      refetchOnMount: true,
+      refetchOnWindowFocus: true,
     }
   );
 
