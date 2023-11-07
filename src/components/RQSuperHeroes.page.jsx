@@ -9,12 +9,16 @@ export const RQSuperHeroesPage = () => {
   const { isLoading, data, isError, error } = useQuery(
     'super-heroes',
     fetchSuperHeroes,
-    // after 5 seconds the caache for react-Query [super-heroes] is garbaged i.e no memory storage for it again
-    // the default if not set is 5 minutes
     {
+      // after 5 seconds the caache for react-Query [super-heroes] is garbaged i.e no memory storage for it again
+      // the default if not set is 5 minutes
       cacheTime: 5000,
+      // refetch defaults
       refetchOnMount: true,
       refetchOnWindowFocus: true,
+      //   polling
+      refetchInterval: 2000,
+      refetchIntervalInBackground: true,
     }
   );
 
