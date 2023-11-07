@@ -29,11 +29,18 @@ export const RQSuperHeroesPage = () => {
       //   refetchInterval: 2000,
       //   refetchIntervalInBackground: true,
 
-      enabled: false,
+      //   === USEQUERY ON CLICK===
+      //   enabled: false,
 
-      //   ==== Success and Error Callbacks ====
+      //   ==== SUCCESS AND ERROR CALLBACKS ====
       onSuccess,
       onError,
+
+      //   ====DATA TRANSFORMATION ====
+      select: (data) => {
+        const superHeroesNames = data.data.map((heroes) => heroes.name);
+        return superHeroesNames;
+      },
     }
   );
 
@@ -48,8 +55,11 @@ export const RQSuperHeroesPage = () => {
     <>
       <button onClick={refetch}>Fetch Heroes</button>
       <h2>RQ SuperHeroes page</h2>
-      {data?.data.map((heroes) => {
+      {/* {data?.data.map((heroes) => {
         return <div key={heroes.name}>{heroes.name}</div>;
+      })} */}
+      {data.map((heroName) => {
+        return <div key={heroName}>{heroName}</div>;
       })}
     </>
   );
