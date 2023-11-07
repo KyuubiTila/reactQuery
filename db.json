@@ -1,0 +1,24 @@
+{
+  "superHeroes": [
+    {
+      "id": 1,
+      "name": "Tunde",
+      "alterEgo": "Isaac not Newton"
+    },
+    {
+      "id": 2,
+      "name": "Pelumi",
+      "alterEgo": "Mark not Angel"
+    },
+    {
+      "id": 3,
+      "name": "Sarah",
+      "alterEgo": "Opo not Kri"
+    },
+    {
+      "id": 4,
+      "name": "Ayobami",
+      "alterEgo": "Alex not Ferguson"
+    }
+  ]
+}
