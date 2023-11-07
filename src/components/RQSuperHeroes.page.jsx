@@ -6,24 +6,38 @@ const fetchSuperHeroes = () => {
 };
 
 export const RQSuperHeroesPage = () => {
-  const { isLoading, data, isError, error, refetch } = useQuery(
+  const onSuccess = (data) => {
+    console.log('data fetched succesfully', data);
+  };
+
+  const onError = (error) => {
+    console.log('data fetching failed', error);
+  };
+  const { isLoading, data, isError, error, refetch, isFetching } = useQuery(
     'super-heroes',
     fetchSuperHeroes,
     {
       // after 5 seconds the caache for react-Query [super-heroes] is garbaged i.e no memory storage for it again
       // the default if not set is 5 minutes
       //   cacheTime: 5000,
+
       // ======REFETCH DEFAULTS=====
       //   refetchOnMount: true,
       //   refetchOnWindowFocus: true,
+
       //  ======= POLLING=====
       //   refetchInterval: 2000,
       //   refetchIntervalInBackground: true,
+
       enabled: false,
+
+      //   ==== Success and Error Callbacks ====
+      onSuccess,
+      onError,
     }
   );
 
-  if (isLoading) {
+  if (isLoading || isFetching) {
     return <h2> ...Is Loading </h2>;
   }
 
