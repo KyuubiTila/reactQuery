@@ -20,5 +20,23 @@
       "name": "Ayobami",
       "alterEgo": "Alex not Ferguson"
     }
+  ],
+  "friends": [
+    {
+      "id": 1,
+      "name": "Jegede"
+    },
+    {
+      "id": 2,
+      "name": "Akpome"
+    },
+    {
+      "id": 3,
+      "name": "Mary"
+    },
+    {
+      "id": 4,
+      "name": "Afia"
+    }
   ]
 }

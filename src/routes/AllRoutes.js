@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import { HomePage } from '../components/HomePage';
+import { ParallelQueryPage } from '../components/Parallel';
 import { RQsuperHeroPage } from '../components/RQSuperHero.page';
 import { RQSuperHeroesPage } from '../components/RQSuperHeroes.page';
 import { SuperHeroesPage } from '../components/SuperHeroesPage';
@@ -12,6 +13,7 @@ export const AllRoutes = () => {
         <Route path="/super-heroes" element={<SuperHeroesPage />} />
         <Route path="/rq-super-heroes" element={<RQSuperHeroesPage />} />
         <Route path="/rq-super-heroes/:heroId" element={<RQsuperHeroPage />} />
+        <Route path="/parallel" element={<ParallelQueryPage />} />
       </Routes>
     </>
   );

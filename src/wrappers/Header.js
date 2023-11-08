@@ -13,6 +13,9 @@ export const Header = () => {
         <li>
           <Link to="/rq-super-heroes">RQ Super Heroes</Link>
         </li>
+        <li>
+          <Link to="/parallel">Parallel Query</Link>
+        </li>
       </ul>
     </nav>
   );
