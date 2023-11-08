@@ -18,6 +18,7 @@ export const ParallelQueryPage = () => {
     isLoading: heroesLoading,
     isError: heroesError,
   } = useQuery('parallelHeroes', fetchParallelHeroes);
+
   const {
     data: friendsData,
     isLoading: friendsLoading,

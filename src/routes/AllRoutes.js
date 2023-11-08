@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import { DynamicParallelPage } from '../components/DynamicParallel.page';
 import { HomePage } from '../components/HomePage';
 import { ParallelQueryPage } from '../components/Parallel';
 import { RQsuperHeroPage } from '../components/RQSuperHero.page';
@@ -14,6 +15,10 @@ export const AllRoutes = () => {
         <Route path="/rq-super-heroes" element={<RQSuperHeroesPage />} />
         <Route path="/rq-super-heroes/:heroId" element={<RQsuperHeroPage />} />
         <Route path="/parallel" element={<ParallelQueryPage />} />
+        <Route
+          path="/dynamicParallel"
+          element={<DynamicParallelPage heroIds={[1, 3]} />}
+        />
       </Routes>
     </>
   );
