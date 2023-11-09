@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import { DependentQueriesPage } from '../components/DependentQueries.page';
 import { DynamicParallelPage } from '../components/DynamicParallel.page';
 import { HomePage } from '../components/HomePage';
 import { ParallelQueryPage } from '../components/Parallel';
@@ -18,6 +19,10 @@ export const AllRoutes = () => {
         <Route
           path="/dynamicParallel"
           element={<DynamicParallelPage heroIds={[1, 3]} />}
+        />
+        <Route
+          path="/dependentQueries"
+          element={<DependentQueriesPage email="page@gmail.com" />}
         />
       </Routes>
     </>

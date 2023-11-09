@@ -19,6 +19,9 @@ export const Header = () => {
         <li>
           <Link to="/dynamicParallel">Dynamic Parallel </Link>
         </li>
+        <li>
+          <Link to="/dependentQueries">Dependent Query </Link>
+        </li>
       </ul>
     </nav>
   );

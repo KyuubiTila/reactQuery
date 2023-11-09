@@ -38,5 +38,17 @@
       "id": 4,
       "name": "Afia"
     }
+  ],
+  "users": [
+    {
+      "id": "page@gmail.com",
+      "channelId": "page"
+    }
+  ],
+  "channels": [
+    {
+      "id": "page",
+      "courses": ["vue", "react", "angular"]
+    }
   ]
 }
