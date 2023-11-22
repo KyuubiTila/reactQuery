@@ -24,6 +24,11 @@
       "name": "mm",
       "alterEgo": "mm",
       "id": 5
+    },
+    {
+      "name": "oo",
+      "alterEgo": "oo",
+      "id": 6
     }
   ],
   "friends": [
