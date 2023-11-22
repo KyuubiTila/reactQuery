@@ -19,6 +19,11 @@
       "id": 4,
       "name": "Ayobami",
       "alterEgo": "Alex not Ferguson"
+    },
+    {
+      "name": "mm",
+      "alterEgo": "mm",
+      "id": 5
     }
   ],
   "friends": [
@@ -48,7 +53,11 @@
   "channels": [
     {
       "id": "page",
-      "courses": ["vue", "react", "angular"]
+      "courses": [
+        "vue",
+        "react",
+        "angular"
+      ]
     }
   ],
   "colors": [
