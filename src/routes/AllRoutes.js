@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import { DependentQueriesPage } from '../components/DependentQueries.page';
 import { DynamicParallelPage } from '../components/DynamicParallel.page';
 import { HomePage } from '../components/HomePage';
+import { PaginatedQueries } from '../components/PaginatedQueries.page';
 import { ParallelQueryPage } from '../components/Parallel';
 import { RQsuperHeroPage } from '../components/RQSuperHero.page';
 import { RQSuperHeroesPage } from '../components/RQSuperHeroes.page';
@@ -24,6 +25,7 @@ export const AllRoutes = () => {
           path="/dependentQueries"
           element={<DependentQueriesPage email="page@gmail.com" />}
         />
+        <Route path="/paginated-queries" element={<PaginatedQueries />} />
       </Routes>
     </>
   );

@@ -22,6 +22,9 @@ export const Header = () => {
         <li>
           <Link to="/dependentQueries">Dependent Query </Link>
         </li>
+        <li>
+          <Link to="/paginated-queries">Paginated Query </Link>
+        </li>
       </ul>
     </nav>
   );
